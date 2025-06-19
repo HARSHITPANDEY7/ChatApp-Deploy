@@ -1,14 +1,13 @@
 {
   "name": "cha-main",
   "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "install": "cd backend && npm install && cd ../Frontend && npm install",
-    "build": "npm run build --prefix Frontend",
-    "start": "cd backend && npm start",
-    "dev": "cd backend && nodemon index.js"
+    "build": "npm install && npm install --prefix Frontend && npm run build --prefix Frontend",
+    "start": "node Backend/index.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "description": ""
+  "license": "ISC"
 }
